@@ -96,7 +96,6 @@ npm run build
 ## 🧑‍💻 Author
 
 **Ravish Chaudhary**  
-📍 New Delhi, India   
 🔗 GitHub: https://github.com/RAV1SHCHAUDHARY
 
 ---
