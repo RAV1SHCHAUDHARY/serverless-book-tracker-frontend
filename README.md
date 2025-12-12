@@ -6,8 +6,8 @@ This frontend is deployed on **Vercel** and connects to a fully serverless backe
 ---
 
 ## 🚀 Live Demo
-🔗 **Frontend:** https://your-vercel-link  
-🔗 **Backend (API):** https://your-api-gateway-url  
+🔗 **Frontend:** https://your-vercel-link (to be updated) 
+🔗 **Backend (API):** https://your-api-gateway-url (to be updated) 
 
 ---
 
@@ -96,8 +96,7 @@ npm run build
 ## 🧑‍💻 Author
 
 **Ravish Chaudhary**  
-📍 New Delhi, India  
-🔗 LinkedIn: https://www.linkedin.com/in/ravish-chaudhary-a9b60b28b  
+📍 New Delhi, India   
 🔗 GitHub: https://github.com/RAV1SHCHAUDHARY
 
 ---
