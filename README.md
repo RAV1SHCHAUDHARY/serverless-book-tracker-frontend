@@ -1,132 +1,106 @@
-# 🚀 Serverless Book Tracker (AWS + React + DynamoDB)
+# 📚 Serverless Book Tracker (Frontend)
 
-A production-ready serverless Book Tracker application built using **AWS Lambda**, **API Gateway**, **DynamoDB**, and a **React + Vite** frontend deployed on **Vercel**.
-
-This project demonstrates strong cloud architecture, serverless backend engineering, API design, IaC, CI/CD deployment, and modern frontend development.
-
----
-
-## ✨ Features
-
-### 🔹 Frontend (React + Vite + Tailwind)
-- Add books  
-- Update notes / reading progress  
-- Delete books  
-- Responsive UI  
-- Deployed on **Vercel**  
-
-### 🔹 Backend (AWS Serverless)
-- REST API with Lambda  
-- CRUD operations  
-- DynamoDB single-table design  
-- IAM least-privilege roles  
-- Deployed using **Serverless Framework**  
+A modern, fast, and scalable **React + Vite** application for managing personal reading lists.  
+This frontend is deployed on **Vercel** and connects to a fully serverless backend powered by **AWS Lambda, DynamoDB, API Gateway, and IAM**.
 
 ---
 
-## 🧱 Architecture Overview
-
-```
-Vercel Hosting (Frontend)
-        ↓
-React App
-        ↓
-AWS API Gateway  ← HTTPS REST API
-        ↓
-AWS Lambda Functions
-        ↓
-AWS DynamoDB Table
-```
-
-Services Used:
-- AWS Lambda  
-- AWS API Gateway  
-- AWS DynamoDB  
-- AWS IAM  
-- AWS CloudWatch  
+## 🚀 Live Demo
+🔗 **Frontend:** https://your-vercel-link  
+🔗 **Backend (API):** https://your-api-gateway-url  
 
 ---
 
-## 📁 Folder Structure
+## 🎯 Features
+
+- Add, update, and delete books
+- Mark books as "Read" or "Unread"
+- Clean and responsive UI using **Tailwind CSS**
+- Fully serverless backend integration
+- Uses environment variables for API configuration
+- Optimized build using **Vite** for fast loading
+
+---
+
+## 🧩 Tech Stack
+
+### **Frontend**
+- React (Hooks)
+- Vite
+- Tailwind CSS
+
+### **Backend (Separate repo)**
+- AWS Lambda (Node.js)
+- API Gateway
+- DynamoDB
+- IAM Roles & Policies
+
+---
+
+## 📁 Project Structure
 
 ```
-backend/
 frontend/
-architecture/
-README.md
-LICENSE
-CONTRIBUTING.md
+│── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── main.jsx
+│── public/
+│── index.html
+│── package.json
+│── .gitignore
 ```
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Setup Instructions
 
-### 🔧 Backend Setup (AWS + Serverless)
-
+### 1. Clone the repo
 ```bash
-cd backend
-npm install
-serverless deploy
+git clone https://github.com/RAV1SHCHAUDHARY/serverless-book-tracker-frontend
+cd serverless-book-tracker-frontend
 ```
 
-After deploy, copy your generated API URL and put it in frontend `.env`.
-
----
-
-### 🖥️ Frontend Setup (React + Vite)
-
+### 2. Install dependencies
 ```bash
-cd frontend
 npm install
+```
+
+### 3. Create `.env`
+(Do NOT commit this file — it is ignored)
+```
+VITE_API_URL=https://your-api-gateway-url
+```
+
+### 4. Run the project
+```bash
 npm run dev
 ```
 
-Build for production:
-
+### 5. Build for production
 ```bash
 npm run build
 ```
 
-Deploy to Vercel:
+---
 
-```bash
-vercel deploy
-```
+## 🛡 Security & Best Practices
+
+- `.env` and `node_modules` are fully ignored with `.gitignore`
+- No API keys committed in the repo
+- Uses environment variables with Vite prefix `VITE_`
+- Safe for public GitHub showcase
 
 ---
 
-## 🔐 Environment Variables
-
-### Frontend (`.env`)
-```
-VITE_API_URL=https://<your-api-gateway-url>
-```
-
-### Backend (`serverless.yml`)
-```
-DYNAMODB_TABLE: book-tracker-table
-REGION: ap-south-1
-```
-
----
-
-## 📦 Future Enhancements
-- Add login with AWS Cognito  
-- Add book search  
-- Add categories/tags  
-- Add analytics dashboard  
-
----
-
-## 👨‍💻 Author
+## 🧑‍💻 Author
 
 **Ravish Chaudhary**  
-AWS | DevOps | Full Stack Developer  
-
-GitHub · LinkedIn
+📍 New Delhi, India  
+🔗 LinkedIn: https://www.linkedin.com/in/ravish-chaudhary-a9b60b28b  
+🔗 GitHub: https://github.com/RAV1SHCHAUDHARY
 
 ---
 
 ## 📜 License
-MIT License
+This project is under the **MIT License**. See `LICENSE` file.
